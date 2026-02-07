@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tetris — Classic Puzzle Game</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+      color: #eee;
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      padding: 2rem;
+    }
+    .container {
+      text-align: center;
+      max-width: 480px;
+    }
+    h1 {
+      font-size: 3rem;
+      margin: 0 0 0.5rem 0;
+      letter-spacing: 0.1em;
+      text-shadow: 0 0 20px rgba(0, 240, 240, 0.3);
+      color: #fff;
+    }
+    .tagline {
+      font-size: 1.1rem;
+      color: #b8b8d1;
+      margin-bottom: 2rem;
+    }
+    .description {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #c4c4e0;
+      margin-bottom: 2rem;
+    }
+    .play-btn {
+      display: inline-block;
+      padding: 1rem 3rem;
+      font-size: 1.25rem;
+      font-weight: 600;
+      text-decoration: none;
+      color: #fff;
+      background: linear-gradient(135deg, #00f0f0 0%, #0099aa 100%);
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 4px 20px rgba(0, 240, 240, 0.3);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .play-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 24px rgba(0, 240, 240, 0.4);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>TETRIS</h1>
+    <p class="tagline">The timeless block-stacking puzzle</p>
+    <p class="description">
+      Rotate and drop falling tetrominoes to clear complete lines. Simple to learn, endlessly addictive. How high can you score?
+    </p>
+    <a href="game.html" class="play-btn">Play</a>
+  </div>
+</body>
+</html>
